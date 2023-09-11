@@ -1,4 +1,3 @@
-
 x1='''
 <html lang="zh-CN">
   <head>
@@ -436,7 +435,8 @@ def txt_write(tablelist):#tablelist是字典
             fp.write('\n')#空行
 b=[]
 #words=['BV1EE411T7Vc','BV1ZJ41137Go']
-for i in range(lv):
+for i in range(300):
+    print(i)
     #word = input("请输入视频号:")  # 输入视频号进入网页
     getcids = getcid(video_urls[i])  # 进入https://api.bilibili.com/x/player/pagelist?bvid=+BV号+&jsonp=jsonp
     cid = re.findall('"cid":(\d{6,10})', getcids)  # 通过正则表达式获取cid，获取6——10长度的数字,此时是列表
@@ -444,6 +444,16 @@ for i in range(lv):
     danmu = getdanmu(str(cid))  # 将int变成str
     b=b+danmu
     # BV1Rg411d7Ve
+#print(b)
+r=['!','"','！','，']
+#r=list(r)
+r1=len(r)
+c=len(b)
+#for i in range(c):
+    #print(b[i])
+for ri in range(r1):
+    for i in range(c):
+        b[i] = re.sub(r[ri],'', str(b[i]))
 d = {}
 for i in b:
     d[i] = d.get(i, 0) + 1
