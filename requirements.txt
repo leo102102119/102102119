@@ -1,0 +1,5 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\zlf\AppData\Local\Temp\jieba.cache
+Loading model cost 0.865 seconds.
+Prefix dict has been built successfully.
+<wordcloud.wordcloud.WordCloud object at 0x000002764362E750>
