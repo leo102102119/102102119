@@ -1,0 +1,21 @@
+<!--pages/rjgc01/rjgc01.wxml-->
+<view>
+  <image class='bg' src="../../components/image/水墨背景.jpg"></image>
+</view>
+<view class="container">  
+  <button class="btn1" bindtap="go1"> 开始 </button>
+  <text>设置局数:</text>
+  <view class="inputshow1">  
+    <textarea maxlength='500' placeholder-style="color:#5F5F5F;" bindinput='limitWord1' value="{{content}}" ></textarea>
+  </view>
+  <text>设置筹码:</text> 
+  <view class="inputshow1"> 
+    <textarea maxlength='500' placeholder-style="color:#5F5F5F;" bindinput='limitWord2' value="{{content}}" ></textarea>
+  </view>
+  <!--
+  <text>user01={{user01}}</text>  
+  <text>user02={{user02}}</text> 
+  <text>v1={{v1}}</text>  
+  <text>v2={{v2}}</text> 
+  -->
+</view>

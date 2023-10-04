@@ -1,0 +1,82 @@
+<!--pages/third/third.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    Weixin
+  </view>
+</scroll-view>
+<!-- 骰子模版视图 -->
+<template name="first">
+    <view class="first face">
+        <span class="pip"></span>
+    </view>
+</template>
+<template name="second">
+    <view class="second face">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </view>
+</template>
+<template name="third">
+    <view class="third face">
+        <span class="pip"></span>
+        <span class="pip third-item-center"></span>
+        <span class="pip"></span>
+    </view>
+</template>
+<template name="fourth">
+    <view class="fourth face">
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+    </view>
+</template>
+<template name="fifth">
+    <view class="fifth face">
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+        <view class="column fifth-column-center">
+            <span class="pip"></span> 
+        </view> 
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+    </view>
+</template>
+<template name="sixth">
+    <view class="sixth face">
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view> 
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+    </view>
+</template>
+<!--index.wxml-->
+<view class="flex-container"> 
+    <view class="dice-box">
+        <block><template is="{{dice[num]}}"></template></block>
+    </view>
+    <view class="button-box">
+        <button type="{{buttonType}}" size="mini" bindtap="shake" >{{buttonValue}}</button>
+    </view>
+</view>
+<view class="content-btn-group">
+<button class="btn1" bindtap="go1"> 人机对战 </button>
+<button class="btn2" bindtap="go2"> 双人对战 </button>
+</view>
+<view>
+  <image class='bg' src="../../components/image/水墨背景.jpg"></image>
+</view>
