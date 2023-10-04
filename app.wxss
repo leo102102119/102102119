@@ -1,0 +1,93 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 75rpx 0;
+  box-sizing: border-box;
+} 
+.into1, .into2 {
+  /* 字体大小 */
+  font-size: 45px; 
+  font-family: 微软雅黑体;
+  /* 字体颜色 */
+  color: #114514;
+  /* 字体风格-粗细 */
+  font-weight: bold;
+  text-align:center;
+}
+.into1 {
+  margin-top: 55px;
+}
+.into2 {
+  margin-top: 15px;
+}
+.btn1, .btn2, .btn3{
+  height: 80rpx;
+  width: 150rpx;
+  background-color: #114514;
+  color:white;
+  font-family: 微软雅黑体;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn1{
+  margin-top: 100px;
+}
+.btn2{
+  margin-top: 25px;
+}
+.btn3{
+  margin-top: 0px;
+}
+text {
+  /* 字体大小 */
+  font-size: 10px;
+  /* 字体颜色 */
+  color: #114514;
+  font-family: 微软雅黑体;
+  /* 字体风格-粗细 */
+  font-weight: bold;
+  text-align:center;
+}
+image{
+  width: 90rpx;
+  height: 90rpx;
+  border:0px solid #114514;
+}
+.bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -9999;
+  border:0px;
+}
+.content-btn-group{
+  padding: 10px;
+}
+.button-hover {
+  background-color: RGB(191,98,10);
+  color:#fff;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+.inputshow1, .inputshow2{
+  padding: 10px;
+  background-color: white;
+  border:1px solid #114514;
+  padding: 10rpx;
+  width: 250rpx;
+}
+.inputshow1{
+  height: 50rpx;
+}
+.inputshow2{
+  height: 20rpx;
+}

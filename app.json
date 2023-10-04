@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/second/second",
+    "pages/third/third",
+    "pages/forth/forth",
+    "pages/fifth/fifth",
+    "pages/playgame/playgame",
+    "pages/sixth/sixth",
+    "pages/zymk01/zymk01",
+    "pages/zymk02/zymk02",
+    "pages/zymk03/zymk03",
+    "pages/zymk04/zymk04",
+    "pages/zymk05/zymk05",
+    "pages/zymk06/zymk06",
+    "pages/zymk07/zymk07",
+    "pages/zymk08/zymk08",
+    "pages/zymk09/zymk09",
+    "pages/zymk10/zymk10",
+    "pages/rjgc01/rjgc01",
+    "pages/rjgc02/rjgc02",
+    "pages/rjgc03/rjgc03",
+    "pages/rjgc04/rjgc04",
+    "pages/huamian01/huamian01",
+    "pages/huamian02/huamian02",
+    "pages/huamian03/huamian03",
+    "pages/huamian04/huamian04",
+    "pages/huamian05/huamian05"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#114514",
+    "navigationBarTitleText": "开心K骰",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2"
+}
