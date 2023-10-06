@@ -1,0 +1,8 @@
+<!--pages/huamian05/huamian05.wxml-->
+<view class="into1">玩家2获胜</view>
+<view class="content-btn-group">
+<button class="btn1" bindtap="go1"> 退出游戏 </button>
+</view>
+<view>
+  <image class='bg' src="../../components/image/水墨背景.jpg"></image>
+</view>

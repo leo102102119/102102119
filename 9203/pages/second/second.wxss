@@ -1,0 +1,24 @@
+/* pages/second/second.wxss */
+.game{
+  width: 600rpx;
+  height: 600rpx;
+  border:0px;
+  align-items: center;
+}
+.page{
+    border: 5px solid#ccc;
+    background: #fff;
+    margin: 50rpx;  
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx ;
+    border-radius: 10rpx;
+}
+text{
+  font-family: 微软雅黑体;
+  height: 80rpx;
+  font-size: 8pt;
+  line-height: 8rpx;
+  text-align:center;
+}
+      

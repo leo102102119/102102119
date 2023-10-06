@@ -1,0 +1,10 @@
+<!--pages/rjgc08/rjgc08.wxml-->
+<view class="into3">当前位于{{acm}}号房间</view>
+<view class="into4">无人加入此房间</view>
+<view class="into4">请继续……</view>
+<view class="content-btn-group">
+<button class="btn1" bindtap="go1"> 继续 </button>
+</view>
+<view>
+  <image class='bg' src="../../components/image/水墨背景.jpg"></image>
+</view>

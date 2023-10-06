@@ -1,0 +1,16 @@
+<!--pages/rjgc05/rjgc05.wxml-->
+<view>
+  <image class='bg' src="../../components/image/水墨背景.jpg"></image>
+</view>
+<view class="container1">  
+  <text class="into5">设置局数和筹码:</text> 
+  <input class="inputshow1" type="text" bindinput='limitWord1' placeholder="局数" />  
+  <input class="inputshow1" type="text" bindinput='limitWord2' placeholder="筹码" />  
+  <button class="btn2" bindtap="go1">开始</button>  
+  <!--
+  <text>user01={{user01}}</text>  
+  <text>user02={{user02}}</text> 
+  <text>v1={{v1}}</text>  
+  <text>v2={{v2}}</text> 
+  -->
+</view>
