@@ -1,2 +1,13 @@
-a=int(input())
-print(a)
+import requests
+from bs4 import BeautifulSoup
+a='https://www.pku.edu.cn'
+a='https://baike.baidu.com/item/丁基羟基茴香醚'
+resp=requests.get(a) #请求百度首页
+#print(resp) #打印请求结果的状态码
+#print(resp.content) #打印请求到的网页源码
+bsobj=BeautifulSoup(resp.content,'lxml') #将网页源码构造成BeautifulSoup对象，方便操作
+tag_list = bsobj.find_all('a')
+for tag in  tag_list:
+    print(tag.text)
+print()
+print(bsobj)
