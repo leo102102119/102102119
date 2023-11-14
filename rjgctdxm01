@@ -6,8 +6,11 @@ resp=requests.get(a) #请求百度首页
 #print(resp) #打印请求结果的状态码
 #print(resp.content) #打印请求到的网页源码
 bsobj=BeautifulSoup(resp.content,'lxml') #将网页源码构造成BeautifulSoup对象，方便操作
-tag_list = bsobj.find_all('p')
-for tag in  tag_list:
+tag_list1 = bsobj.find_all('a')
+for tag in  tag_list1:
+    print(tag.text)
+tag_list2 = bsobj.find_all('p')
+for tag in  tag_list2:
     print(tag.text)
 print()
 print(bsobj)
