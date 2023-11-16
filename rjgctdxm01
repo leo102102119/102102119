@@ -1,8 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
-a='https://www.pku.edu.cn'
-a='https://baike.baidu.com/item/丁基羟基茴香醚'
-resp=requests.get(a) #请求百度首页
+a1='https://www.pku.edu.cn'
+a1='https://baike.baidu.com/item/防腐剂'
+a2='https://baike.baidu.com/item/丁基羟基茴香醚'
+resp=requests.get(a1) #请求百度首页
 #print(resp) #打印请求结果的状态码
 #print(resp.content) #打印请求到的网页源码
 bsobj=BeautifulSoup(resp.content,'lxml') #将网页源码构造成BeautifulSoup对象，方便操作
@@ -11,6 +12,24 @@ for tag in  tag_list1:
     print(tag.text)
 tag_list2 = bsobj.find_all('p')
 for tag in  tag_list2:
+    print(tag.text)
+tag_list3 = bsobj.find_all('y')
+for tag in  tag_list3:
+    print(tag.text)
+print()
+print(bsobj)
+resp=requests.get(a2) #请求百度首页
+#print(resp) #打印请求结果的状态码
+#print(resp.content) #打印请求到的网页源码
+bsobj=BeautifulSoup(resp.content,'lxml') #将网页源码构造成BeautifulSoup对象，方便操作
+tag_list1 = bsobj.find_all('a')
+for tag in  tag_list1:
+    print(tag.text)
+tag_list2 = bsobj.find_all('p')
+for tag in  tag_list2:
+    print(tag.text)
+tag_list3 = bsobj.find_all('y')
+for tag in  tag_list3:
     print(tag.text)
 print()
 print(bsobj)
