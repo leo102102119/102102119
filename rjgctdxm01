@@ -13,9 +13,6 @@ for tag in  tag_list1:
 tag_list2 = bsobj.find_all('p')
 for tag in  tag_list2:
     print(tag.text)
-tag_list3 = bsobj.find_all('y')
-for tag in  tag_list3:
-    print(tag.text)
 print()
 print(bsobj)
 resp=requests.get(a2) #请求百度首页
@@ -27,9 +24,6 @@ for tag in  tag_list1:
     print(tag.text)
 tag_list2 = bsobj.find_all('p')
 for tag in  tag_list2:
-    print(tag.text)
-tag_list3 = bsobj.find_all('y')
-for tag in  tag_list3:
     print(tag.text)
 print()
 print(bsobj)
